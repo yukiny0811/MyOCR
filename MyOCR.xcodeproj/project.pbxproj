@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7183355A46111D6B2A60E3 /* Pods_MyOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83511A9BC32EDCBD738E0C10 /* Pods_MyOCR.framework */; };
 		538CF4CB1F35834C008E9318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CF4CA1F35834C008E9318 /* AppDelegate.swift */; };
 		538CF4CD1F35834C008E9318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CF4CC1F35834C008E9318 /* ViewController.swift */; };
 		538CF4D01F35834C008E9318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538CF4CE1F35834C008E9318 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50040F4FD04CA815C41AFDD4 /* Pods-MyOCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOCR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyOCR/Pods-MyOCR.debug.xcconfig"; sourceTree = "<group>"; };
 		538CF4C71F35834C008E9318 /* MyOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538CF4CA1F35834C008E9318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538CF4CC1F35834C008E9318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		538CF4D11F35834C008E9318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538CF4D41F35834C008E9318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538CF4D61F35834C008E9318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83511A9BC32EDCBD738E0C10 /* Pods_MyOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EAF03EEAD9F049E9E4169E /* Pods-MyOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOCR/Pods-MyOCR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7183355A46111D6B2A60E3 /* Pods_MyOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				538CF4C91F35834C008E9318 /* MyOCR */,
 				538CF4C81F35834C008E9318 /* Products */,
+				FAFF3737CE176EB53E85A045 /* Pods */,
+				D9AEF11DA40FC46FACDB072C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MyOCR;
 			sourceTree = "<group>";
 		};
+		D9AEF11DA40FC46FACDB072C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83511A9BC32EDCBD738E0C10 /* Pods_MyOCR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAFF3737CE176EB53E85A045 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50040F4FD04CA815C41AFDD4 /* Pods-MyOCR.debug.xcconfig */,
+				D6EAF03EEAD9F049E9E4169E /* Pods-MyOCR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 538CF4D91F35834C008E9318 /* Build configuration list for PBXNativeTarget "MyOCR" */;
 			buildPhases = (
+				9C69F2134ADE30BEF8EA8D99 /* [CP] Check Pods Manifest.lock */,
 				538CF4C31F35834C008E9318 /* Sources */,
 				538CF4C41F35834C008E9318 /* Frameworks */,
 				538CF4C51F35834C008E9318 /* Resources */,
+				8A3F6BB4E99601DF39777853 /* [CP] Embed Pods Frameworks */,
+				5F1DA4F654C7FBB866B00576 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F1DA4F654C7FBB866B00576 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyOCR/Pods-MyOCR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A3F6BB4E99601DF39777853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyOCR/Pods-MyOCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C69F2134ADE30BEF8EA8D99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		538CF4C31F35834C008E9318 /* Sources */ = {
@@ -259,10 +334,12 @@
 		};
 		538CF4DA1F35834C008E9318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50040F4FD04CA815C41AFDD4 /* Pods-MyOCR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7KBT9HS966;
 				INFOPLIST_FILE = MyOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lit.yuki.myocr.MyOCR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +349,12 @@
 		};
 		538CF4DB1F35834C008E9318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6EAF03EEAD9F049E9E4169E /* Pods-MyOCR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7KBT9HS966;
 				INFOPLIST_FILE = MyOCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lit.yuki.myocr.MyOCR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +381,7 @@
 				538CF4DB1F35834C008E9318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
